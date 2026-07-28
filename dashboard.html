@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PenVerse Dashboard</title>
+<meta name="description" content="PenVerse dashboard home for discovering premium books and stories.">
+<meta property="og:title" content="PenVerse Dashboard">
+<meta property="og:description" content="Discover premium books across romance, fantasy, comedy, anime, novels, and more.">
+<meta name="theme-color" content="#D4AF37">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+<header>
+  <div class="logo">PenVerse</div>
+  <nav aria-label="Dashboard navigation">
+    <a class="active" href="dashboard.html">Home</a>
+    <a href="#categories">Categories</a>
+    <a href="#popular">Popular</a>
+    <a href="#library">My Library</a>
+  </nav>
+  <div class="profile-chip" aria-label="User profile">
+    <div class="avatar">P</div>
+    <div>
+      <strong>Reader</strong><br>
+      <small>Premium Member</small>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="hero" id="popular">
+    <div class="welcome-panel">
+      <div class="eyebrow">Dashboard Home</div>
+      <h1>Discover your next unforgettable universe.</h1>
+      <p>Welcome to PenVerse, a refined home for readers who want cinematic stories, beautiful collections, and premium discovery across every genre.</p>
+      <form class="search-row" aria-label="Search books">
+        <input type="search" placeholder="Search books, authors, genres, or moods...">
+        <button class="gold-button" type="submit">Explore</button>
+      </form>
+    </div>
+    <aside class="popular-card" aria-label="Popular book collection">
+      <div class="book-stack" aria-hidden="true">
+        <div class="book"></div>
+        <div class="book"></div>
+        <div class="book"></div>
+      </div>
+      <div>
+        <div class="eyebrow">Special Collection</div>
+        <h2>Popular This Week</h2>
+        <p>Handpicked bestsellers, viral reads, and rising authors curated for a premium PenVerse experience.</p>
+        <div class="metric-row">
+          <div class="metric"><strong>4.9</strong><span>Rating</span></div>
+          <div class="metric"><strong>18K</strong><span>Readers</span></div>
+          <div class="metric"><strong>72</strong><span>Books</span></div>
+        </div>
+      </div>
+    </aside>
+  </section>
+
+  <section id="categories" aria-labelledby="category-title">
+    <div class="section-title">
+      <div>
+        <div class="eyebrow">Curated Categories</div>
+        <h2 id="category-title">Browse by Mood & Genre</h2>
+      </div>
+      <p>Premium cards built for fast, elegant discovery.</p>
+    </div>
+    <div class="category-grid">
+      <article class="category-card" data-icon="😂"><h3>Comedy</h3><p>Light-hearted stories, witty characters, and feel-good escapes for every break.</p><span>12K+ titles</span></article>
+      <article class="category-card" data-icon="💛"><h3>Romance</h3><p>Emotional journeys, slow burns, royal love, heartbreak, and happily-ever-afters.</p><span>25K+ titles</span></article>
+      <article class="category-card" data-icon="🐉"><h3>Fantasy</h3><p>Magic kingdoms, ancient prophecies, dragons, portals, and legendary heroes.</p><span>31K+ titles</span></article>
+      <article class="category-card" data-icon="⚔️"><h3>Epic</h3><p>Grand sagas with powerful worlds, unforgettable battles, and timeless stakes.</p><span>8K+ titles</span></article>
+      <article class="category-card" data-icon="🌸"><h3>Anime</h3><p>Manga-inspired adventures, academy arcs, rivals, heroes, and emotional bonds.</p><span>14K+ titles</span></article>
+      <article class="category-card" data-icon="📖"><h3>Novel</h3><p>Literary reads, modern classics, character drama, and immersive long-form fiction.</p><span>19K+ titles</span></article>
+      <article class="category-card" data-icon="🕵️"><h3>Mystery</h3><p>Dark secrets, clever clues, suspenseful cases, and page-turning reveals.</p><span>10K+ titles</span></article>
+      <article class="category-card" data-icon="🚀"><h3>Sci-Fi</h3><p>Future civilizations, advanced tech, space odysseys, and bold human questions.</p><span>9K+ titles</span></article>
+    </div>
+  </section>
+
+  <section id="library" aria-labelledby="library-title">
+    <div class="section-title">
+      <div>
+        <div class="eyebrow">Personal Shelf</div>
+        <h2 id="library-title">Continue Your Journey</h2>
+      </div>
+      <p>Your home page feels alive with recent reads and smart picks.</p>
+    </div>
+    <div class="shelf-grid">
+      <div class="shelf-card">
+        <h3>Featured For You</h3>
+        <div class="book-row" aria-label="Featured book covers">
+          <div class="mini-book">Golden Realm</div>
+          <div class="mini-book">Love Letters</div>
+          <div class="mini-book">Moon Archive</div>
+          <div class="mini-book">Wild Pages</div>
+        </div>
+      </div>
+      <div class="shelf-card">
+        <h3>Reading Activity</h3>
+        <div class="activity-list">
+          <div class="activity-item"><div class="activity-icon">✨</div><div><strong>Daily Premium Pick</strong><span>A fresh editor-selected title is ready.</span></div></div>
+          <div class="activity-item"><div class="activity-icon">🔥</div><div><strong>Trending Romance</strong><span>Readers are loving royal slow-burn stories.</span></div></div>
+          <div class="activity-item"><div class="activity-icon">🏆</div><div><strong>Top Author Spotlight</strong><span>Explore award-worthy fantasy worlds today.</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+</body>
+</html>
